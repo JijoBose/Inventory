@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Authentication & Authorization
 gem 'devise'
+# User Roles
+gem 'cancancan', '~> 2.3'
 
 # Bootstrap
 gem 'bootstrap', '~> 4.0'

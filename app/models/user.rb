@@ -1,4 +1,7 @@
 class User
+  # ROLES = %i[admin moderator supplier banned]
+  ROLES = { admin: "Admin", moderator: "Moderator", supplier: "Supplier", banned: "Banned"}
+
   include Mongoid::Document
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -15,6 +18,9 @@ class User
 
   ## Rememberable
   field :remember_created_at, type: Time
+
+  ## Roles
+  field :role, type: String
 
   ## Trackable
   # field :sign_in_count,      type: Integer, default: 0
