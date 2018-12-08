@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   devise_for :users, :controllers => { registrations: 'registrations' }
   root 'home_pages#index'
   get 'home_pages/index'
