@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @supplier_product.user %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @supplier_product.product %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @supplier_product.stock %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @supplier_product.price %>
+</p>
+
+<%= link_to 'Edit', edit_supplier_product_path(@supplier_product) %> |
+<%= link_to 'Back', supplier_products_path %>
