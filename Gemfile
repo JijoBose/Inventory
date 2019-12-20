@@ -20,7 +20,7 @@ gem 'devise'
 gem 'cancancan', '~> 2.3'
 
 # Bootstrap
-gem 'bootstrap', '~> 4.0'
+gem 'bootstrap', '~> 4.3'
 gem 'jquery-rails'
 gem 'simple_form'
 # MongoDB
